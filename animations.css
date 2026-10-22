@@ -1,0 +1,113 @@
+/* Animations & effects layer — loaded after styles.css.
+   Everything respects prefers-reduced-motion at the bottom. */
+
+/* scroll progress */
+.scroll-progress{position:fixed;top:0;left:0;height:3px;width:0;z-index:100;
+  background:linear-gradient(90deg,var(--teal),var(--amber));border-radius:0 3px 3px 0}
+
+/* hero entrance */
+@keyframes riseIn{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+.hero-copy>*{animation:riseIn .8s cubic-bezier(.22,.8,.32,1) both}
+.hero-copy>*:nth-child(2){animation-delay:.08s}
+.hero-copy>*:nth-child(3){animation-delay:.16s}
+.hero-copy>*:nth-child(4){animation-delay:.24s}
+.hero-copy>*:nth-child(5){animation-delay:.32s}
+.hero-copy>*:nth-child(6){animation-delay:.4s}
+.hero-card{animation:riseIn .9s .25s cubic-bezier(.22,.8,.32,1) both;transition:transform .25s ease,box-shadow .25s ease;transform-style:preserve-3d;position:relative}
+.hero-card:hover{box-shadow:0 28px 60px rgba(23,35,59,.16)}
+
+/* typewriter role line */
+.role-rotator{font-family:'JetBrains Mono',monospace;font-size:.95rem;color:var(--ink-soft);margin-bottom:14px;min-height:1.5em}
+.role-rotator #roleText{color:var(--teal-dark);font-weight:600}
+.caret{display:inline-block;margin-left:2px;color:var(--amber);animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+
+/* floating badges on profile card */
+.float-badge{position:absolute;z-index:3;background:#fff;border:1px solid var(--line);
+  box-shadow:0 10px 24px rgba(23,35,59,.12);border-radius:999px;padding:6px 13px;
+  font-size:.76rem;font-weight:600;color:var(--ink);animation:floaty 5s ease-in-out infinite}
+.badge-1{top:14px;left:12px}
+.badge-2{top:120px;right:12px;animation-delay:1.2s;color:var(--teal-dark)}
+.badge-3{bottom:118px;left:12px;animation-delay:2.1s;color:#92400e}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+
+/* marquee */
+.marquee-wrap{overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  background:rgba(255,255,255,.55);padding:13px 0;margin-top:26px;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+          mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.marquee{display:flex;gap:26px;width:max-content;animation:marquee 30s linear infinite;
+  font-family:'Fraunces',serif;font-size:1.02rem;color:var(--ink-soft);white-space:nowrap}
+.marquee i{color:var(--amber);font-style:normal}
+.marquee-wrap:hover .marquee{animation-play-state:paused}
+@keyframes marquee{to{transform:translateX(-50%)}}
+
+/* paper card */
+.paper-card{display:grid;grid-template-columns:1.6fr .7fr;gap:0;background:#fff;border:1px solid var(--line);
+  border-radius:var(--radius);overflow:hidden;box-shadow:0 16px 36px rgba(23,35,59,.07)}
+.paper-main{padding:30px}
+.paper-main h3{font-size:1.45rem;margin-bottom:4px}
+.paper-author{font-family:'JetBrains Mono',monospace;font-size:.8rem;color:var(--muted);margin-bottom:12px}
+.paper-main p{color:var(--ink-soft)}
+.doi{font-family:'JetBrains Mono',monospace;font-size:.8rem;color:var(--muted);align-self:center}
+.paper-stat{background:linear-gradient(150deg,#ecfdf5,#fef3c7);display:flex;flex-direction:column;
+  align-items:center;justify-content:center;padding:28px;text-align:center;gap:8px}
+.paper-big{font-family:'Fraunces',serif;font-size:3rem;font-weight:700;color:var(--teal-dark)}
+.paper-caption{font-size:.88rem;color:var(--ink-soft);max-width:22ch}
+
+/* card shine + lift (projects) */
+.project-card{position:relative;overflow:hidden}
+.project-card::after{content:"";position:absolute;top:0;left:-80%;width:55%;height:100%;
+  background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);
+  transform:skewX(-18deg);transition:left .6s ease}
+.project-card:hover::after{left:130%}
+.skill-box{transition:transform .18s ease,box-shadow .18s ease}
+.skill-box:hover{transform:translateY(-3px);box-shadow:0 12px 24px rgba(23,35,59,.08)}
+
+/* heading underline draw */
+.section-head h2{position:relative;display:inline-block;padding-bottom:8px}
+.section-head h2::after{content:"";position:absolute;left:0;bottom:0;height:3px;width:0;
+  background:linear-gradient(90deg,var(--teal),var(--amber));border-radius:3px;transition:width .9s ease .15s}
+.reveal.visible .section-head h2::after,.section.visible .section-head h2::after{width:64px}
+
+/* timeline dots pulse in */
+.timeline li::before{transition:transform .3s ease}
+.timeline li:hover::before{transform:scale(1.45)}
+
+/* buttons shine */
+.btn-primary{position:relative;overflow:hidden}
+.btn-primary::after{content:"";position:absolute;top:0;left:-90%;width:50%;height:100%;
+  background:linear-gradient(100deg,transparent,rgba(255,255,255,.35),transparent);transform:skewX(-18deg);transition:left .55s ease}
+.btn-primary:hover::after{left:140%}
+
+/* writing rows slide */
+.writing-list a{transition:transform .18s ease,background .18s ease}
+.writing-list a:hover{transform:translateX(6px)}
+
+/* staggered reveals */
+.reveal .project-card,.reveal .skill-box{opacity:0;transform:translateY(14px);transition:opacity .55s ease,transform .55s ease}
+.reveal.visible .project-card,.reveal.visible .skill-box{opacity:1;transform:none}
+.reveal.visible .project-card:nth-child(2){transition-delay:.07s}
+.reveal.visible .project-card:nth-child(3){transition-delay:.14s}
+.reveal.visible .project-card:nth-child(4){transition-delay:.21s}
+.reveal.visible .project-card:nth-child(5){transition-delay:.28s}
+.reveal.visible .project-card:nth-child(6){transition-delay:.35s}
+.reveal.visible .project-card:nth-child(7){transition-delay:.42s}
+.reveal.visible .skill-box:nth-child(2){transition-delay:.06s}
+.reveal.visible .skill-box:nth-child(3){transition-delay:.12s}
+.reveal.visible .skill-box:nth-child(4){transition-delay:.18s}
+.reveal.visible .skill-box:nth-child(5){transition-delay:.24s}
+.reveal.visible .skill-box:nth-child(6){transition-delay:.3s}
+.reveal.visible .skill-box:nth-child(7){transition-delay:.36s}
+.reveal.visible .skill-box:nth-child(8){transition-delay:.42s}
+.reveal.visible .skill-box:nth-child(9){transition-delay:.48s}
+
+@media (max-width:900px){
+  .paper-card{grid-template-columns:1fr}
+  .float-badge{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  .marquee,.float-badge,.caret,.hero-copy>*,.hero-card{animation:none!important}
+  .reveal .project-card,.reveal .skill-box{opacity:1;transform:none;transition:none}
+  .project-card::after,.btn-primary::after{display:none}
+}

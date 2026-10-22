@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eeshan Garg — SOC Analyst &amp; Cybersecurity Professional</title>
+<meta name="description" content="Eeshan Garg is a cybersecurity professional from Vadodara, Gujarat, specialising in SOC operations, incident response, threat hunting and digital forensics. CRTA certified, Splunk SPL2, Parul University. Open to SOC / Security Analyst roles — on-site & hybrid in Vadodara, and remote.">
+<meta property="og:title" content="Eeshan Garg — SOC Analyst & Cybersecurity Professional">
+<meta property="og:description" content="SOC operations, incident response, threat hunting. CRTA certified. I investigate real incidents and write up what I find.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://eeshan-agrawal.vercel.app/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="animations.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡</text></svg>">
+</head>
+<body>
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- animated light background -->
+<div class="bg" aria-hidden="true">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+  <div class="blob blob-4"></div>
+</div>
+
+<header class="site-header">
+  <a class="brand" href="#top">Eeshan Garg<span class="brand-dot">.</span></a>
+  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+  <nav class="nav" id="nav">
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#research">Research</a>
+    <a href="#projects">Projects</a>
+    <a href="#writing">Writing</a>
+    <a href="#contact">Contact</a>
+    <a class="nav-cta" href="assets/Eeshan_Garg_Resume.pdf" download>Resume ↓</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="availability"><span class="pulse"></span> Open to SOC / Security Analyst roles — Vadodara (on-site / hybrid) &amp; remote</p>
+      <h1>I work the blue side of security — <em>finding the incident hidden in the logs.</em></h1>
+      <p class="role-rotator" aria-label="Roles">Working as: <span id="roleText">SOC Analyst</span><span class="caret">|</span></p>
+      <p class="hero-sub">
+        Hi, I'm Eeshan. I'm a cybersecurity professional focused on SOC operations (L1/L2),
+        incident response, digital forensics and threat hunting. I've investigated a real brute-force
+        attack end to end, completed four security internships, and published peer-shared research on
+        application security (SSRN, 2026). That's the kind of work I want to do full-time.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">See my projects</a>
+        <a class="btn btn-ghost" href="assets/Eeshan_Garg_Resume.pdf" download>Download resume</a>
+        <a class="btn btn-text" href="https://www.linkedin.com/in/eeshangarg888" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+      <dl class="stats">
+        <div><dt><span class="count" data-count="20">0</span>+</dt><dd>open-source projects</dd></div>
+        <div><dt><span class="count" data-count="4">0</span></dt><dd>security internships</dd></div>
+        <div><dt><span class="count" data-count="7">0</span>+</dt><dd>technical write-ups</dd></div>
+        <div><dt><span class="count" data-count="500">0</span>+</dt><dd>LinkedIn connections</dd></div>
+      </dl>
+    </div>
+
+    <aside class="hero-card" id="heroCard">
+      <span class="float-badge badge-1">CRTA Certified</span>
+      <span class="float-badge badge-2">SSRN Published</span>
+      <span class="float-badge badge-3">SOC · DFIR</span>
+      <!-- Replace assets/profile.jpg with your LinkedIn profile photo (see README).
+           Until then your GitHub photo loads automatically. -->
+      <div class="photo-band">
+        <img class="profile-photo" src="assets/profile.jpg" alt="Eeshan Garg — LinkedIn profile photo"
+             onerror="this.onerror=null;this.style.display='none';document.getElementById('photoFallback').style.display='flex';">
+        <div class="profile-photo photo-fallback" id="photoFallback" style="display:none" aria-hidden="true">EG</div>
+      </div>
+      <div class="hero-card-body">
+        <p class="card-name">Eeshan Garg</p>
+        <p class="card-role">Cybersecurity · SOC Analyst · Digital Forensics</p>
+        <ul class="card-list">
+          <li>Splunk (SPL2) · Wireshark · Sysmon · ELK · Wazuh</li>
+          <li>Sophos Firewall · ManageEngine Log360</li>
+          <li>Python · Bash · SQL · C++</li>
+          <li>MITRE ATT&amp;CK · NIST 800-53 · CIS Benchmarks</li>
+        </ul>
+        <p class="card-note">📍 Vadodara, Gujarat · Parul University<br>Currently: sharpening threat-hunting and blue-team automation, one lab and one write-up at a time.</p>
+      </div>
+    </aside>
+  </section>
+
+  <!-- scrolling tools strip -->
+  <div class="marquee-wrap" aria-hidden="true">
+    <div class="marquee">
+      <span>Splunk</span><i>✦</i><span>Wireshark</span><i>✦</i><span>Wazuh EDR</span><i>✦</i><span>Sophos Firewall</span><i>✦</i><span>ManageEngine Log360</span><i>✦</i><span>Metasploit</span><i>✦</i><span>Burp Suite</span><i>✦</i><span>Nmap</span><i>✦</i><span>MITRE ATT&amp;CK</span><i>✦</i><span>YARA Rules</span><i>✦</i><span>Digital Forensics</span><i>✦</i><span>Threat Hunting</span><i>✦</i>
+      <span>Splunk</span><i>✦</i><span>Wireshark</span><i>✦</i><span>Wazuh EDR</span><i>✦</i><span>Sophos Firewall</span><i>✦</i><span>ManageEngine Log360</span><i>✦</i><span>Metasploit</span><i>✦</i><span>Burp Suite</span><i>✦</i><span>Nmap</span><i>✦</i><span>MITRE ATT&amp;CK</span><i>✦</i><span>YARA Rules</span><i>✦</i><span>Digital Forensics</span><i>✦</i><span>Threat Hunting</span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about" class="section reveal">
+    <div class="section-head">
+      <p class="kicker">About</p>
+      <h2>Defensive by focus, offensive by training.</h2>
+    </div>
+    <div class="two-col">
+      <div>
+        <p>
+          My route into security wasn't a straight line from a textbook. It came from labs, CTFs and
+          late-night PCAP files — pulling apart network traffic until a MitM attack or a quiet data
+          exfiltration finally made sense. That hands-on habit is still how I learn, and it's why I
+          publish my investigations instead of just finishing them.
+        </p>
+        <p>
+          I hold the <strong>CRTA (Certified Red Team Analyst)</strong> certification, which taught me how
+          attackers actually move. I use that every day on the defensive side: triaging alerts, hunting
+          through logs in Splunk, and asking "if I were the attacker, what would I do next?"
+        </p>
+        <p>
+          I'm based in <strong>Vadodara, Gujarat</strong>, pursuing a <strong>B.Tech in Computer Science &
+          Engineering (2023–2027, CGPA 8.2) at Parul University</strong> — coursework in Network Security,
+          Ethical Hacking, Digital Forensics and Cloud Security. Alongside my degree I've trained across
+          25+ global platforms, including IBM, Cisco, EC-Council and Homeland Security programmes.
+        </p>
+        <p>
+          What I'm looking for now is a SOC or security analyst seat where I can do this for a real
+          organisation — monitor, investigate, respond, and keep getting better at it.
+        </p>
+      </div>
+      <div class="focus-box">
+        <h3>What I actually do</h3>
+        <ul class="check-list">
+          <li>Alert triage &amp; investigation (SOC L1/L2)</li>
+          <li>Incident response — containment, evidence, reporting</li>
+          <li>Log analysis &amp; SIEM queries in Splunk (SPL2)</li>
+          <li>Threat hunting mapped to MITRE ATT&amp;CK</li>
+          <li>Network forensics with Wireshark &amp; tcpdump</li>
+          <li>Security automation in Python</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="work" class="section reveal">
+    <div class="section-head">
+      <p class="kicker">Experience &amp; journey</p>
+      <h2>Where I've done the work</h2>
+    </div>
+    <ol class="timeline">
+      <li>
+        <p class="time">May – Jul 2026 · Hybrid</p>
+        <h3>Security Operations Intern — CodeAlpha</h3>
+        <p>
+          Worked on network security and IDS/IPS concepts, and explored phishing awareness and threat
+          detection methodologies. Public deliverables from this period include SentinelSight and my
+          phishing awareness training module.
+        </p>
+        <p class="tags">SOC · IDS/IPS · Phishing · Threat Detection</p>
+      </li>
+      <li>
+        <p class="time">Jan – Mar 2026 · Remote</p>
+        <h3>Cybersecurity Tools &amp; System Development Intern — Cryptonic Area</h3>
+        <p>
+          Triaged simulated security logs in Splunk, classifying alerts and reducing false-positive
+          review time. Built work around secure authentication and vulnerability reporting, ran
+          simulated incident response scenarios, and documented mitigation strategies.
+        </p>
+        <p class="tags">Splunk · Alert Triage · Incident Response · Reporting</p>
+      </li>
+      <li>
+        <p class="time">Apr – Jul 2025 · Remote</p>
+        <h3>VAPT &amp; Security Analysis Intern — Plasmid Innovation Ltd</h3>
+        <p>
+          Performed vulnerability assessment and reconnaissance, and worked across VAPT, incident
+          response and security monitoring concepts — strengthening defensive practice with real tooling.
+        </p>
+        <p class="tags">VAPT · Recon · Security Monitoring</p>
+      </li>
+      <li>
+        <p class="time">Nov – Dec 2024 · Remote</p>
+        <h3>Cybersecurity Intern — ShadowFox</h3>
+        <p>Hands-on work in system security concepts and vulnerability identification — where the internship run started.</p>
+        <p class="tags">System Security · Vulnerability Identification</p>
+      </li>
+      <li>
+        <p class="time">Virtual simulations · Forage</p>
+        <h3>Cybersecurity Job Simulations — Mastercard, PwC, ANZ, AIG, JPMorgan &amp; Telstra</h3>
+        <p>Completed six employer simulations covering SOC operations, incident response, threat monitoring and risk analysis.</p>
+        <p class="tags">SOC Operations · Risk Analysis · Threat Monitoring</p>
+      </li>
+      <li>
+        <p class="time">Incident Response — hands-on investigation</p>
+        <h3>Brute-force attack investigation</h3>
+        <p>
+          Investigated a live brute-force attack: identified the attack vector from authentication logs,
+          traced the source, and prepared forensic evidence and a written incident report. This is the
+          investigation I point recruiters to first — it's real response work, not a tutorial exercise.
+        </p>
+        <p class="tags">Incident Response · Log Analysis · Forensics · Reporting</p>
+      </li>
+      <li>
+        <p class="time">2024</p>
+        <h3>CRTA — Certified Red Team Analyst</h3>
+        <p>Offensive security certification covering red-team tactics, techniques and threat modelling. Splunk Intro to SPL2 completed the same year for SIEM and log investigation.</p>
+        <p class="tags">Red Teaming · Penetration Testing · Splunk SPL2</p>
+      </li>
+      <li>
+        <p class="time">Recent — from my LinkedIn</p>
+        <h3>DFIR workshop &amp; SOC operations in practice</h3>
+        <p>
+          Attended a DFIR workshop — “From Digital Evidence to Digital Investigations” — by Drona Cyber
+          Solutions at Parul University, and documented hands-on SOC operations work with Sophos Firewall
+          and ManageEngine Log360, connecting day-to-day monitoring to real-world threat intelligence and OSINT.
+        </p>
+        <p class="tags">DFIR · Sophos Firewall · Log360 · Threat Intelligence</p>
+      </li>
+      <li>
+        <p class="time">Training — C3iHub, IIT Kanpur</p>
+        <h3>7-day cybersecurity training</h3>
+        <p>
+          Completed an intensive 7-day programme covering VAPT, PowerShell, BitLocker and Wazuh EDR
+          with C3iHub, IIT Kanpur — documented day by day on LinkedIn, because showing the learning
+          curve honestly is part of the point.
+        </p>
+        <p class="tags">VAPT · PowerShell · BitLocker · Wazuh EDR</p>
+      </li>
+      <li>
+        <p class="time">Ongoing</p>
+        <h3>Security research, CTFs &amp; labs</h3>
+        <p>
+          Regular CTF participation (including pwn.college), enterprise security labs, and OSINT
+          investigations — most of which become the Medium write-ups below.
+        </p>
+        <p class="tags">CTF · OSINT · Threat Analysis</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- RESEARCH -->
+  <section id="research" class="section reveal">
+    <div class="section-head">
+      <p class="kicker">Published research</p>
+      <h2>The paper — UASAF</h2>
+    </div>
+    <article class="paper-card">
+      <div class="paper-main">
+        <p class="project-meta">SSRN · 2026 · Research Publication</p>
+        <h3>Unified Application Security Assessment Framework (UASAF)</h3>
+        <p class="paper-author">Garg, E. (2026)</p>
+        <p>
+          I developed the Unified Application Security Assessment Framework, integrating static code
+          analysis, B2R CTF exploit-chain simulation, and phishing vectors into one assessment model.
+          The headline finding: <strong>94.3% of exploitable attack chains involve compounding
+          vulnerabilities</strong> — single flaws rarely break an application on their own; it's the
+          chain that does it. That's exactly why I assess applications the way an attacker chains them.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://doi.org/10.2139/ssrn.7014078" target="_blank" rel="noopener">Read the paper on SSRN ↗</a>
+          <span class="doi">DOI: 10.2139/ssrn.7014078</span>
+        </div>
+      </div>
+      <div class="paper-stat">
+        <span class="paper-big"><span class="count" data-count="94.3" data-decimal="1">0</span>%</span>
+        <span class="paper-caption">of exploitable attack chains involve compounding vulnerabilities</span>
+      </div>
+    </article>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section reveal">
+    <div class="section-head">
+      <p class="kicker">Featured projects</p>
+      <h2>Security tools I've built — not just followed along with</h2>
+      <p class="section-sub">Six picks from 20+ repositories, chosen because a hiring manager asked "what can he actually do?" These are the answer.</p>
+    </div>
+
+    <div class="project-grid">
+      <article class="project-card featured">
+        <p class="project-meta">Python · CIS Benchmarks · NIST 800-53</p>
+        <h3><a href="https://github.com/Die-Another-Day/Security-Policy-Compliance-Checker" target="_blank" rel="noopener">Security Policy Compliance Checker ↗</a></h3>
+        <p>An agent-based platform that scans Linux and Windows hosts against a 19-control security checklist mapped to CIS Benchmarks and NIST 800-53, then produces a severity-weighted compliance score. Built for the unglamorous but essential work of proving a system is actually configured safely.</p>
+        <p class="project-foot">GRC · Hardening · Automation</p>
+      </article>
+
+      <article class="project-card featured">
+        <p class="project-meta">Python · SOC · Evidence Integrity</p>
+        <h3><a href="https://github.com/Die-Another-Day/LumenChain" target="_blank" rel="noopener">LumenChain ↗</a></h3>
+        <p>An AI-assisted SOC investigation platform with hash-chain verified evidence integrity — Lumen (light) + chain (the tamper-evident ledger). It keeps the chain of custody intact while an analyst works a case, because an investigation you can't trust is just a story.</p>
+        <p class="project-foot">SOC · Incident Response · Chain of Custody</p>
+      </article>
+
+      <article class="project-card">
+        <p class="project-meta">Python · Scapy · FastAPI · Next.js</p>
+        <h3><a href="https://github.com/Die-Another-Day/CodeAlpha_SentinelSight" target="_blank" rel="noopener">SentinelSight ↗</a></h3>
+        <p>Network intelligence and traceroute analysis platform with interactive visualisations. Built during my CodeAlpha internship to make network paths — and the anomalies in them — visible at a glance.</p>
+        <p class="project-foot">Network Intelligence · Visualisation</p>
+      </article>
+
+      <article class="project-card">
+        <p class="project-meta">Ruby · Android Security</p>
+        <h3><a href="https://github.com/Die-Another-Day/The-MPF" target="_blank" rel="noopener">The MPF — Mobile Penetration Testing Framework ↗</a></h3>
+        <p>A Metasploit-inspired security validation platform for Android app security assessment, built to close gaps I kept hitting in mobile testing workflows.</p>
+        <p class="project-foot">Mobile Security · Pentesting</p>
+      </article>
+
+      <article class="project-card">
+        <p class="project-meta">Wireshark · tcpdump · PCAP Analysis</p>
+        <h3><a href="https://github.com/Die-Another-Day/Wireshark-Forensics-Practice" target="_blank" rel="noopener">Wireshark Forensics Practice ↗</a></h3>
+        <p>Five network forensic labs analysing real PCAPs — MitM attacks, data exfiltration, and compromised Windows hosts. The lab work behind several of my Medium write-ups.</p>
+        <p class="project-foot">Forensics · Network Analysis</p>
+      </article>
+
+      <article class="project-card">
+        <p class="project-meta">Python · Packet Analysis</p>
+        <h3>SniffWave — Network Sniffer</h3>
+        <p>A packet sniffer that captures, parses and analyses network traffic for protocol and packet inspection — the small, sharp tool I reach for before opening a full forensic suite.</p>
+        <p class="project-foot">Network Traffic · Protocol Inspection</p>
+      </article>
+
+      <article class="project-card">
+        <p class="project-meta">Security Awareness · Social Engineering</p>
+        <h3><a href="https://github.com/Die-Another-Day/CodeAlpha_PhishingAwarenessTraining" target="_blank" rel="noopener">Phishing Awareness Training ↗</a></h3>
+        <p>A training module that teaches users to spot phishing, fake websites, email scams and social-engineering tactics. Because the human layer is still where most incidents start.</p>
+        <p class="project-foot">Awareness · Phishing · Training</p>
+      </article>
+    </div>
+    <p class="more-link">Everything else — LeetCode practice, internship repos and experiments — lives on <a href="https://github.com/Die-Another-Day/" target="_blank" rel="noopener">github.com/Die-Another-Day ↗</a></p>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section reveal">
+    <div class="section-head">
+      <p class="kicker">Toolkit</p>
+      <h2>Skills, grouped the way SOC job descriptions group them</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-box"><h3>SIEM &amp; Monitoring</h3><p>Splunk (SPL2), ELK Stack, ManageEngine Log360, Wazuh EDR, Wireshark, Sysmon, Sophos Firewall</p></div>
+      <div class="skill-box"><h3>Defensive Operations</h3><p>Incident Response, Threat Hunting, Log Analysis, Digital Forensics, Alert Triage</p></div>
+      <div class="skill-box"><h3>Offensive Security</h3><p>Red Teaming, Penetration Testing, Metasploit, Nmap, Burp Suite, GDB, strace</p></div>
+      <div class="skill-box"><h3>Frameworks</h3><p>MITRE ATT&amp;CK, NIST 800-53, CIS Benchmarks, YARA Rules, SOC 2 basics</p></div>
+      <div class="skill-box"><h3>Languages</h3><p>Python, Bash, SQL, C, Java, JavaScript, TypeScript</p></div>
+      <div class="skill-box"><h3>Platforms &amp; Tools</h3><p>Linux, Windows, AWS, Azure, Docker, Git</p></div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section reveal">
+    <div class="section-head">
+      <p class="kicker">Certifications</p>
+      <h2>Credentials, with who issued them</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-box"><h3>CRTA</h3><p>Certified Red Team Analyst — CyberWayLabs</p></div>
+      <div class="skill-box"><h3>BelkaGPT</h3><p>Digital Forensics — Belkasoft</p></div>
+      <div class="skill-box"><h3>Endpoint Security</h3><p>Cisco</p></div>
+      <div class="skill-box"><h3>Palo Alto Fundamentals</h3><p>Network Security · Security Operations · Cloud Security</p></div>
+      <div class="skill-box"><h3>Intro to SPL2</h3><p>Splunk</p></div>
+      <div class="skill-box"><h3>Defensive Security &amp; Cyber Risk</h3><p>Cybrary</p></div>
+      <div class="skill-box"><h3>Forensics — LetsDefend</h3><p>NTFS Forensics · TeamViewer Forensics</p></div>
+      <div class="skill-box"><h3>Certified Ethereum Learner</h3><p>HackQuest</p></div>
+      <div class="skill-box"><h3>On my roadmap</h3><p>CEH v12, then OSCP — goals I'm working towards, not credentials I hold yet.</p></div>
+    </div>
+  </section>
+
+  <!-- WRITING -->
+  <section id="writing" class="section reveal">
+    <div class="section-head">
+      <p class="kicker">Writing</p>
+      <h2>I write up what I investigate</h2>
+      <p class="section-sub">Published on Medium in InfoSec Write-ups, MeetCyber and OSINT Team. Writing is how I prove I understood an incident — and how other analysts learn from it.</p>
+    </div>
+    <ul class="writing-list">
+      <li>
+        <a href="https://eeshan-agrawal.medium.com/" target="_blank" rel="noopener">
+          <span class="w-date">May 14</span>
+          <span class="w-title">SOC257 — VPN Connection Detected from Unauthorized Country</span>
+          <span class="w-sub">Incident investigation report · True positive</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://eeshan-agrawal.medium.com/" target="_blank" rel="noopener">
+          <span class="w-date">Jan 29</span>
+          <span class="w-title">Lab Write-up: Linux CLI — Identifying Incorrect File Extensions</span>
+          <span class="w-sub">Digital forensics · Case study</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://eeshan-agrawal.medium.com/" target="_blank" rel="noopener">
+          <span class="w-date">Jan 11</span>
+          <span class="w-title">The AI Gold Rush Has a Trust Problem</span>
+          <span class="w-sub">How SOC 2 is quietly evolving to tame the machine</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://eeshan-agrawal.medium.com/" target="_blank" rel="noopener">
+          <span class="w-date">Jan 10</span>
+          <span class="w-title">Unmasking “Sp1ritFyre” — The MSP Data Breach Investigation</span>
+          <span class="w-sub">OSINT · From a single handle to a full identity, using passive reconnaissance</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://eeshan-agrawal.medium.com/" target="_blank" rel="noopener">
+          <span class="w-date">Dec 27</span>
+          <span class="w-title">Uncovering the Wire: A Deep-Dive into Network Forensics with Wireshark</span>
+          <span class="w-sub">Network forensics · Executive summary &amp; full analysis</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://eeshan-agrawal.medium.com/" target="_blank" rel="noopener">
+          <span class="w-date">Jan 5</span>
+          <span class="w-title">Santa's Byte-Level Bookkeeping: Solving pwn.college Day 01</span>
+          <span class="w-sub">CTF write-up</span>
+        </a>
+      </li>
+    </ul>
+    <p class="more-link"><a href="https://eeshan-agrawal.medium.com/" target="_blank" rel="noopener">Read all articles on Medium ↗</a></p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact reveal">
+    <p class="kicker">Contact</p>
+    <h2>Hiring for a SOC or security analyst role?</h2>
+    <p>
+      I'd genuinely like to hear from you. The fastest way to reach me is LinkedIn —
+      I reply to every serious message, usually the same day. I'm based in Vadodara, Gujarat
+      and open to internships and full-time roles, on-site or hybrid here, and remote anywhere.
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="https://www.linkedin.com/in/eeshangarg888" target="_blank" rel="noopener">Message me on LinkedIn</a>
+      <a class="btn btn-ghost" href="https://github.com/Die-Another-Day/" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn btn-ghost" href="https://eeshan-agrawal.medium.com/" target="_blank" rel="noopener">Medium</a>
+    </div>
+    <blockquote class="quote">“Security is not a product, but a process.” — Bruce Schneier, a line I keep on my GitHub for a reason.</blockquote>
+  </section>
+
+</main>
+
+<footer>
+  <p>© <span id="year"></span> Eeshan Garg · Built by hand, updated as I learn.</p>
+  <p><a href="#top">Back to top ↑</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
