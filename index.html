@@ -276,57 +276,29 @@
     <div class="section-head">
       <p class="kicker">Featured projects</p>
       <h2>Security tools I've built — not just followed along with</h2>
-      <p class="section-sub">Six picks from 20+ repositories, chosen because a hiring manager asked "what can he actually do?" These are the answer.</p>
+      <p class="section-sub">Three projects, chosen because a hiring manager asked "what can he actually do?" These are the answer.</p>
     </div>
 
     <div class="project-grid">
       <article class="project-card featured">
-        <p class="project-meta">Python · CIS Benchmarks · NIST 800-53</p>
-        <h3><a href="https://github.com/Die-Another-Day/Security-Policy-Compliance-Checker" target="_blank" rel="noopener">Security Policy Compliance Checker ↗</a></h3>
-        <p>An agent-based platform that scans Linux and Windows hosts against a 19-control security checklist mapped to CIS Benchmarks and NIST 800-53, then produces a severity-weighted compliance score. Built for the unglamorous but essential work of proving a system is actually configured safely.</p>
-        <p class="project-foot">GRC · Hardening · Automation</p>
+        <p class="project-meta">Ruby · Android Security · Metasploit-inspired</p>
+        <h3><a href="https://github.com/Die-Another-Day/The-MPF" target="_blank" rel="noopener">The MPF — Mobile Penetration Testing Framework ↗</a></h3>
+        <p>A Metasploit-inspired security validation platform for Android application security assessment. It combines static and dynamic analysis with a modular exploit–payload architecture, attack-chain reasoning, payload generation and reporting — built to close gaps I kept hitting in mobile testing workflows. Install it from <a href="https://community.chocolatey.org/packages/mpf/2.2.1" target="_blank" rel="noopener">Chocolatey (mpf 2.2.1) ↗</a>, or via the <a href="https://die-another-day.github.io/The-MPF-APT" target="_blank" rel="noopener">MPF APT repository ↗</a> on Debian/Ubuntu/Kali.</p>
+        <p class="project-foot">Mobile Security · Pentesting · Android</p>
       </article>
 
       <article class="project-card featured">
-        <p class="project-meta">Python · SOC · Evidence Integrity</p>
-        <h3><a href="https://github.com/Die-Another-Day/LumenChain" target="_blank" rel="noopener">LumenChain ↗</a></h3>
-        <p>An AI-assisted SOC investigation platform with hash-chain verified evidence integrity — Lumen (light) + chain (the tamper-evident ledger). It keeps the chain of custody intact while an analyst works a case, because an investigation you can't trust is just a story.</p>
-        <p class="project-foot">SOC · Incident Response · Chain of Custody</p>
+        <p class="project-meta">Python · FastAPI · CIS Benchmarks · NIST 800-53</p>
+        <h3><a href="https://compliancity.vercel.app/" target="_blank" rel="noopener">Compliancity — Live Portal ↗</a></h3>
+        <p>A full-stack, agent-based platform that scans Linux and Windows hosts against a 19-control security checklist mapped to CIS Benchmarks and NIST 800-53, then produces a severity-weighted compliance score — a disabled firewall counts far more than a missing screen-lock timeout. It tracks configuration drift between scans and exports reports as PDF, HTML or JSON. Try it live at the portal, or see the code on <a href="https://github.com/Die-Another-Day/Security-Policy-Compliance-Checker" target="_blank" rel="noopener">GitHub ↗</a>.</p>
+        <p class="project-foot">GRC · Hardening · Automation · Live App</p>
       </article>
 
-      <article class="project-card">
-        <p class="project-meta">Python · Scapy · FastAPI · Next.js</p>
-        <h3><a href="https://github.com/Die-Another-Day/CodeAlpha_SentinelSight" target="_blank" rel="noopener">SentinelSight ↗</a></h3>
-        <p>Network intelligence and traceroute analysis platform with interactive visualisations. Built during my CodeAlpha internship to make network paths — and the anomalies in them — visible at a glance.</p>
-        <p class="project-foot">Network Intelligence · Visualisation</p>
-      </article>
-
-      <article class="project-card">
-        <p class="project-meta">Ruby · Android Security</p>
-        <h3><a href="https://github.com/Die-Another-Day/The-MPF" target="_blank" rel="noopener">The MPF — Mobile Penetration Testing Framework ↗</a></h3>
-        <p>A Metasploit-inspired security validation platform for Android app security assessment, built to close gaps I kept hitting in mobile testing workflows.</p>
-        <p class="project-foot">Mobile Security · Pentesting</p>
-      </article>
-
-      <article class="project-card">
-        <p class="project-meta">Wireshark · tcpdump · PCAP Analysis</p>
-        <h3><a href="https://github.com/Die-Another-Day/Wireshark-Forensics-Practice" target="_blank" rel="noopener">Wireshark Forensics Practice ↗</a></h3>
-        <p>Five network forensic labs analysing real PCAPs — MitM attacks, data exfiltration, and compromised Windows hosts. The lab work behind several of my Medium write-ups.</p>
-        <p class="project-foot">Forensics · Network Analysis</p>
-      </article>
-
-      <article class="project-card">
-        <p class="project-meta">Python · Packet Analysis</p>
-        <h3>SniffWave — Network Sniffer</h3>
-        <p>A packet sniffer that captures, parses and analyses network traffic for protocol and packet inspection — the small, sharp tool I reach for before opening a full forensic suite.</p>
-        <p class="project-foot">Network Traffic · Protocol Inspection</p>
-      </article>
-
-      <article class="project-card">
-        <p class="project-meta">Security Awareness · Social Engineering</p>
-        <h3><a href="https://github.com/Die-Another-Day/CodeAlpha_PhishingAwarenessTraining" target="_blank" rel="noopener">Phishing Awareness Training ↗</a></h3>
-        <p>A training module that teaches users to spot phishing, fake websites, email scams and social-engineering tactics. Because the human layer is still where most incidents start.</p>
-        <p class="project-foot">Awareness · Phishing · Training</p>
+      <article class="project-card featured">
+        <p class="project-meta">Debian 12 · Linux Kernel · XFCE · Python</p>
+        <h3><a href="https://github.com/Die-Another-Day/SecureOS" target="_blank" rel="noopener">SecureOS — A Real Bootable Cybersecurity OS ↗</a></h3>
+        <p>A real, bootable Debian 12 Linux OS — not a web demo. It started in August 2025 as LoveOS, a web-based OS, and became SecureOS: real kernel 6.1.0-54, GRUB, systemd, and a localhost-only web console with real Nmap, real log analysis and real hashing, for your own lab only. Version 3 adds the basics every OS has — filesystem and file manager, drivers, persistent logging, task manager, battery and Wi-Fi/Ethernet via NetworkManager — and a GUI on demand: boot stays in the terminal, then <code>secureos-gui</code> starts an XFCE desktop, like WSL's <code>kex</code>.</p>
+        <p class="project-foot">Operating Systems · Linux · SOC Lab · GUI on Demand</p>
       </article>
     </div>
     <p class="more-link">Everything else — LeetCode practice, internship repos and experiments — lives on <a href="https://github.com/Die-Another-Day/" target="_blank" rel="noopener">github.com/Die-Another-Day ↗</a></p>
